@@ -1,9 +1,10 @@
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+import CustomText from '../../components/CustomText';
 
 export default function Dashboard() {
   return (
     <View className="flex flex-1 items-center justify-center bg-primary">
-      <Text className='text-3xl font-bold text-foreground'>Update Tab [Dashboard]</Text>
+      <CustomText className='text-3xl text-foreground'>Update Tab [Dashboard]</CustomText>
     </View>
   );
 }
