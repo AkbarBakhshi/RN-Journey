@@ -9,3 +9,5 @@
 3. **Features/Themes**: Themes with Expo Router v3 and NativeWind v4. Corresponding video on YouTube: [The best and easiest way to add a custom theme to Expo app with Expo Router (V3) and NativeWind (V4)](https://youtu.be/O6SYukr2zd0)
 
 4. **Features/DevClient**: Expo Development Builds with Expo Dev Client. Corresponding video on YouTube: [Expo Development Build](https://youtu.be/C04MMx3ucO0)
+
+5. **Features/Splash_Icon_Fonts**: Expo Splash screen (light and dark theme), App icon and Expo Google Fonts. Corresponding video on YouTube: [Expo Fonts, App Icon and Splash Screen (dark/light mode)](https://youtu.be/jEKdBqTclME)
