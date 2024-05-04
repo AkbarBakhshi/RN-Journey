@@ -11,3 +11,5 @@
 4. **Features/DevClient**: Expo Development Builds with Expo Dev Client. Corresponding video on YouTube: [Expo Development Build](https://youtu.be/C04MMx3ucO0)
 
 5. **Features/Splash_Icon_Fonts**: Expo Splash screen (light and dark theme), App icon and Expo Google Fonts. Corresponding video on YouTube: [Expo Fonts, App Icon and Splash Screen (dark/light mode)](https://youtu.be/jEKdBqTclME)
+
+5. **Features/ChatScreen**: Handling Keyboard display and hiding in React Native for TextInput so that the keyboard does not cover the text input area in iOS. Corresponding video on YouTube: [React Native Text Input iOS and Android - Handling Keyboard](https://youtu.be/DuspDGuR58Q)
