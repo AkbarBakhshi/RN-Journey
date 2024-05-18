@@ -10,6 +10,7 @@ import {
 import CustomText from "../../components/CustomText";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { useEffect, useRef, useState } from "react";
+import * as Linking from "expo-linking";
 
 import { Feather } from "@expo/vector-icons";
 import { useBottomTabBarHeight } from "@react-navigation/bottom-tabs";
@@ -66,19 +67,18 @@ export default function Chat() {
     <View className="flex-1 items-center justify-center">
       <KeyboardAwareScrollView
         alwaysBounceVertical={false}
-        className="flex-1 w-full bg-red-600"
+        className="flex-1 w-full"
       >
-        <View className="flex-1 mt-3 mx-3 bg-gray-600  border-b-2">
-          <CustomText className="text-3xl text-foreground">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem
-            velit laudantium error deserunt necessitatibus nisi, illo vero
-            voluptas ullam dolores at ducimus suscipit veritatis ex placeat
-            minima labore molestias laborum. Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Dolorem velit laudantium error
-            deserunt necessitatibus nisi, illo vero voluptas ullam dolores at
-            ducimus suscipit veritatis ex placeat minima labore molestias
-            laborum.
-          </CustomText>
+        <View className="flex-1 mt-3 mx-3 justify-center items-center">
+          <Pressable
+            onPress={() => {
+              Linking.openURL("https://youtu.be/nt4UQ_mzDeI");
+            }}
+          >
+            <CustomText className="text-3xl text-primary underline">
+              AI Chatbot with Resposne Streaming
+            </CustomText>
+          </Pressable>
         </View>
       </KeyboardAwareScrollView>
       <Animated.View
