@@ -1,5 +1,9 @@
 # The main branch will always have all the code merged to date.
 
+**Upgrade to Expo51**:
+1. ```npm install expo@latest``` - Upgrade expo to latest version (51 in our case)
+2. ```npx expo install --fix``` - Resolve any dependency version compatibility issues
+
 **Here is a breakdown of the other branches:**
 
 1. **Starter**: Tailwind CSS and Typescript setup. Corresponding video on YouTube: [React Native Expo with Typescript and Tailwind CSS (2024)](https://www.youtube.com/watch?v=9SdmwQPblBI)
