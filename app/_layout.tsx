@@ -34,7 +34,7 @@ export default function Layout() {
       <GestureHandlerRootView style={{ flex: 1 }}>
         <Drawer>
           <Drawer.Screen
-            name="(tabs)"
+            name="(tabsModal)"
             options={{
               drawerLabel: "Home",
               title: "",

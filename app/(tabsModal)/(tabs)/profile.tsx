@@ -3,7 +3,7 @@ import { CheckBox } from "@rneui/themed";
 import { useEffect, useState } from "react";
 
 import { useColorScheme } from "nativewind";
-import { MyLightTheme } from "../../utilities/themeOptions";
+import { MyLightTheme } from "../../../utilities/themeOptions";
 
 import { useTheme } from '@react-navigation/native';
 
