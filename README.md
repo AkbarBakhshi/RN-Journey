@@ -1,5 +1,3 @@
-# The main branch will always have all the code merged to date.
-
 **Upgrade to Expo51**:
 1. ```npm install expo@latest``` - Upgrade expo to latest version (51 in our case)
 2. ```npx expo install --fix``` - Resolve any dependency version compatibility issues
@@ -19,3 +17,5 @@
 6. **Features/ChatScreen**: Handling Keyboard display and hiding in React Native for TextInput so that the keyboard does not cover the text input area in iOS. Corresponding video on YouTube: [React Native Text Input iOS and Android - Handling Keyboard](https://youtu.be/DuspDGuR58Q)
 
 7. **Features/Expo51_DevClient**: Upgrading Expo SDK 50 to SDK 51 w/development builds. Corresponding video on YouTube: [Ultimate Guide to Upgrade Expo SDK 50 to 51 - Managed workflow w/ Expo Go AND Development Builds](https://youtu.be/2gM8hg9W-J0)
+
+8. **Features/IntervalTimer**: Build an interval timer (TABATA) in React Native. Use Expo Router, modal, Expo Haptics (vibrating device), Expo av (to make a beep sound), and more. Corresponding video on YouTube: [Build an Interval Timer in React Native (Expo Router, Navigation, Modal with Vibration and Audio)](https://youtu.be/ZU51gVaHHKs)
