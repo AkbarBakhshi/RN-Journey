@@ -1,5 +1,3 @@
-import { GestureHandlerRootView } from "react-native-gesture-handler";
-import { Drawer } from "expo-router/drawer";
 import { DarkTheme, ThemeProvider } from "@react-navigation/native";
 import { useColorScheme } from "nativewind";
 import {
@@ -9,7 +7,7 @@ import {
   Exo_900Black,
 } from "@expo-google-fonts/exo";
 
-import { SplashScreen } from "expo-router";
+import { Slot, SplashScreen } from "expo-router";
 
 import "../global.css";
 import { MyLightTheme } from "../utilities/themeOptions";
@@ -18,7 +16,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 
 SplashScreen.preventAutoHideAsync();
 
-export default function Layout() {
+export default function RootLayout() {
   const { colorScheme, setColorScheme } = useColorScheme();
   useEffect(() => {
     const loadTheme = async () => {
@@ -57,31 +55,7 @@ export default function Layout() {
 
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : MyLightTheme}>
-      <GestureHandlerRootView style={{ flex: 1 }}>
-        <Drawer>
-          <Drawer.Screen
-            name="(tabs)"
-            options={{
-              drawerLabel: "Home",
-              title: "",
-            }}
-          />
-          <Drawer.Screen
-            name="shop"
-            options={{
-              drawerLabel: "Shop",
-              title: "Shop",
-            }}
-          />
-          <Drawer.Screen
-            name="settings"
-            options={{
-              drawerLabel: "Settings",
-              title: "Settings",
-            }}
-          />
-        </Drawer>
-      </GestureHandlerRootView>
+      <Slot />
     </ThemeProvider>
   );
 }

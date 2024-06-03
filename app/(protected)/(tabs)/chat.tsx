@@ -7,13 +7,13 @@ import {
   Easing,
   Platform,
 } from "react-native";
-import CustomText from "../../components/CustomText";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { useEffect, useRef, useState } from "react";
 import * as Linking from "expo-linking";
 
 import { Feather } from "@expo/vector-icons";
 import { useBottomTabBarHeight } from "@react-navigation/bottom-tabs";
+import CustomText from "../../../components/CustomText";
 
 export default function Chat() {
   const [chatText, setChatText] = useState("");
@@ -70,6 +70,16 @@ export default function Chat() {
         className="flex-1 w-full"
       >
         <View className="flex-1 mt-3 mx-3 justify-center items-center">
+          <Pressable
+          className="mb-10"
+            onPress={() => {
+              Linking.openURL("https://youtu.be/DuspDGuR58Q");
+            }}
+          >
+            <CustomText className="text-3xl text-primary underline">
+              Phone keyborad covering chat box?
+            </CustomText>
+          </Pressable>
           <Pressable
             onPress={() => {
               Linking.openURL("https://youtu.be/nt4UQ_mzDeI");

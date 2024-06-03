@@ -21,6 +21,7 @@
     ],
     "ios": {
       "supportsTablet": true,
+      "googleServicesFile": "",
       "bundleIdentifier": "com.rnjourney.RNJourney",
       "splash": {
         "image": "./assets/splash.png",
@@ -38,6 +39,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
+      "googleServicesFile": "",
       "package": "com.rnjourney.RNJourney",
       "splash": {
         "image": "./assets/splash.png",
@@ -56,7 +58,18 @@
     },
     "plugins": [
       "expo-router",
-      "expo-font"
+      "expo-font",
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "13.4",
+            "useFrameworks": "static"
+          }
+        }
+      ]
     ],
     "scheme": "rnjourney",
     "extra": {
