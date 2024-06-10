@@ -19,3 +19,7 @@
 7. **Features/Expo51_DevClient**: Upgrading Expo SDK 50 to SDK 51 w/development builds. Corresponding video on YouTube: [Ultimate Guide to Upgrade Expo SDK 50 to 51 - Managed workflow w/ Expo Go AND Development Builds](https://youtu.be/2gM8hg9W-J0)
 
 8. **Features/IntervalTimer**: Build an interval timer (TABATA) in React Native. Use Expo Router, modal, Expo Haptics (vibrating device), Expo av (to make a beep sound), and more. Corresponding video on YouTube: [Build an Interval Timer in React Native (Expo Router, Navigation, Modal with Vibration and Audio)](https://youtu.be/ZU51gVaHHKs)
+
+9. **Features/rnFirebase**: Step-by-step instructions to configure Firebase for your Expo app (Expo Routerv3). Corresponding video on YouTube: [Ultimate Firebase Setup for Expo in 2024: Step-by-Step Guide with Expo Router V3 & Full Auth Flow)](https://youtu.be/U5K-SfIOmZs)
+
+[Reset Password & Email Verification with Firebase in Expo App | Step-by-Step Guide](https://youtu.be/kCerC6XUbVc)
