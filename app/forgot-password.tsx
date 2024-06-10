@@ -7,17 +7,16 @@ import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view
 import { SafeAreaView } from "react-native-safe-area-context";
 import auth from "@react-native-firebase/auth";
 
-export default function SignIn() {
+export default function ForgotPassword() {
   const { colors } = useTheme();
 
-  const [enteredPassword, setEnteredPassword] = useState("");
   const [enteredEmail, setEnteredEmail] = useState("");
 
-  const handleSignIn = () => {
+  const handleForgotPassword = () => {
     auth()
-      .signInWithEmailAndPassword(enteredEmail, enteredPassword)
+      .sendPasswordResetEmail(enteredEmail)
       .then(() => {
-        console.log("User account signed in!");
+        Alert.alert("Email sent", "Please check your email for a link to reset your password.")
       })
       .catch((error) => {
         Alert.alert("Authentication failed", "Invalid Credentials entered. Please try again.")
@@ -44,41 +43,22 @@ export default function SignIn() {
             blurOnSubmit
             placeholder="Enter email address"
           />
-          <TextInput
-            style={styles.input}
-            autoCapitalize="none"
-            autoCorrect
-            keyboardType="default"
-            secureTextEntry={true}
-            value={enteredPassword}
-            onChangeText={setEnteredPassword}
-            blurOnSubmit
-            placeholder="Enter password"
-          />
           <Button
             loading={false}
             disabled={false}
             type="solid"
-            title="Sign In"
+            title="Submit"
             color={colors.primary}
-            onPress={handleSignIn}
+            onPress={handleForgotPassword}
             size="lg"
             radius="md"
           />
           <Button
             type="clear"
-            title="Forgot password?"
+            title="Back to login"
             titleStyle={{ color: colors.primary }}
             onPress={() => {
-              router.push("/forgot-password");
-            }}
-          />
-          <Button
-            type="clear"
-            title="Create an account"
-            titleStyle={{ color: colors.primary }}
-            onPress={() => {
-              router.push("/sign-up");
+              router.push("/sign-in");
             }}
           />
         </View>

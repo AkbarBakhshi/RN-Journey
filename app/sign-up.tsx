@@ -16,9 +16,15 @@ export default function SignUp() {
   const handleSignUp = () => {
     auth()
       .createUserWithEmailAndPassword(enteredEmail, enteredPassword)
-      .then(() => {
-        console.log("User account created & signed in!");
-        router.replace('/')
+      .then((userCredentials) => {
+        const user = userCredentials.user;
+        user.sendEmailVerification().then(() => {
+          console.log("User account created & signed in!");
+          router.replace('/')
+        }).catch(e => {
+          Alert.alert("Email verification could not be sent.")
+          console.error(e)
+        })
       })
       .catch((error) => {
         let errorText = '';
