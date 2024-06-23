@@ -23,3 +23,7 @@
 9. **Features/rnFirebase**: Step-by-step instructions to configure Firebase for your Expo app (Expo Routerv3). Corresponding video on YouTube: [Ultimate Firebase Setup for Expo in 2024: Step-by-Step Guide with Expo Router V3 & Full Auth Flow)](https://youtu.be/U5K-SfIOmZs)
 
 [Reset Password & Email Verification with Firebase in Expo App | Step-by-Step Guide](https://youtu.be/kCerC6XUbVc)
+
+10. **Features/Sanity_CMS**: Stup Sanity CMS for your Expo React Native project. Corresponding video on YouTube: [How to Integrate Sanity CMS with React Native/Expo - Step-by-Step Guide](https://youtu.be/2sochWB3gjo)
+
+Make sure to update project name and database inside **sanity/sanity.config.ts** as well as **sanity.ts** files with your account details.
