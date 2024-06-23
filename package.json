@@ -13,6 +13,8 @@
     "@react-navigation/drawer": "^6.6.15",
     "@rneui/base": "^4.0.0-rc.7",
     "@rneui/themed": "^4.0.0-rc.8",
+    "@sanity/client": "^6.20.1",
+    "dayjs": "^1.11.11",
     "expo": "^51.0.8",
     "expo-constants": "~16.0.1",
     "expo-linking": "~6.3.1",
