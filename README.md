@@ -23,3 +23,5 @@
 9. **Features/rnFirebase**: Step-by-step instructions to configure Firebase for your Expo app (Expo Routerv3). Corresponding video on YouTube: [Ultimate Firebase Setup for Expo in 2024: Step-by-Step Guide with Expo Router V3 & Full Auth Flow)](https://youtu.be/U5K-SfIOmZs)
 
 [Reset Password & Email Verification with Firebase in Expo App | Step-by-Step Guide](https://youtu.be/kCerC6XUbVc)
+
+10. **Features/Dynamic_App_Icons**: Expo Prebuild demo using React Native Change Icon library [Expo Prebuild Showcase: Dynamically Change Application Icons in React Native](https://youtu.be/T7ybGL5HUhI)
