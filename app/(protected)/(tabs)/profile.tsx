@@ -9,6 +9,7 @@ import { useTheme } from "@react-navigation/native";
 
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import auth from "@react-native-firebase/auth";
+import { changeIcon } from 'react-native-change-icon';
 
 export default function Profile() {
   const { setColorScheme, colorScheme } = useColorScheme();
@@ -17,6 +18,8 @@ export default function Profile() {
     setSelectedIndex(themeValue);
     setColorScheme(themeValue);
     await AsyncStorage.setItem("theme", themeValue);
+    const icon = themeValue === "dark" ? "Dark" : themeValue === "light" ? "Light": "Default"
+    changeIcon(icon)
   };
 
   useEffect(() => {
