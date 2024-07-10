@@ -27,3 +27,5 @@
 10. **Features/Sanity_CMS**: Stup Sanity CMS for your Expo React Native project. Corresponding video on YouTube: [How to Integrate Sanity CMS with React Native/Expo - Step-by-Step Guide](https://youtu.be/2sochWB3gjo)
 
 Make sure to update project name and database inside **sanity/sanity.config.ts** as well as **sanity.ts** files with your account details.
+
+11. **Features/Dynamic_App_Icons**: Expo Prebuild demo using React Native Change Icon library [Expo Prebuild Showcase: Dynamically Change Application Icons in React Native](https://youtu.be/T7ybGL5HUhI)
