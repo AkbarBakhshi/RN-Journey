@@ -5,6 +5,6 @@ type Workout = {
   date: string;
   warmup: string;
   strength: string;
-  type: string;
+  type: 'time' | 'number' | 'setReps';
   workout: string;
 };

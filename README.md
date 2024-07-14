@@ -15,3 +15,5 @@
 4. **Features/Sanity_CMS**: Stup Sanity CMS for your Expo React Native project. Corresponding video on YouTube: [How to Integrate Sanity CMS with React Native/Expo - Step-by-Step Guide](https://youtu.be/2sochWB3gjo)
 
 Make sure to update project name and database inside **sanity/sanity.config.ts** as well as **sanity.ts** files with your account details.
+
+5. **Features/BottomSheet**: Implement React Native Bottom Sheet. Corresponding video on YouTube: [Implement Bottom Sheet in React Native & Handle Input Fields Inside the Sheet on iOS/Android](https://youtu.be/Yb7axtRQDHU)
