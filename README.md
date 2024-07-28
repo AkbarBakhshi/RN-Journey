@@ -17,3 +17,5 @@
 Make sure to update project name and database inside **sanity/sanity.config.ts** as well as **sanity.ts** files with your account details.
 
 5. **Features/BottomSheet**: Implement React Native Bottom Sheet. Corresponding video on YouTube: [Implement Bottom Sheet in React Native & Handle Input Fields Inside the Sheet on iOS/Android](https://youtu.be/Yb7axtRQDHU)
+
+6. **Features/SVG**: Display SVG files and shapes in your React Native App. Corresponding video on YouTube: [Handling SVG Files and Code in React Native](https://youtu.be/dxWkQHqdQeo)
